@@ -22,6 +22,7 @@ begin
 		exit when Reponse = 'o' or Reponse = 'O';
 	end loop;
 	--Deviner le nombre choisi par l'utilisateur
+	--initialiser les variables
 	Min := 0;
 	Max := 1000;
 	Proposition := (Min + Max)/2;
