@@ -20,7 +20,7 @@ begin
 			Put("J'attend");
 		end if;
 		exit when Reponse = 'o' or Reponse = 'O';
-	end loop;
+	end loop;  
 	--Deviner le nombre choisi par l'utilisateur
 	--initialiser les variables
 	Min := 0;
