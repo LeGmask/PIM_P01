@@ -23,8 +23,8 @@ begin
 	end loop;  
 	--Deviner le nombre choisi par l'utilisateur
 	--initialiser les variables
-	Min := 0;
-	Max := 1000;
+	Min := 1;
+	Max := 999;
 	Proposition := (Min + Max)/2;
 	Compteur := 1;
 	Quitter := False;
@@ -37,10 +37,10 @@ begin
 		Get(Reponse);
 		--Traiter la réponse de l’utilisateur
 		case Reponse is
-			when 'G' | 'g' => Max := Proposition;
+			when 'G' | 'g' => Max := Proposition-1;
 				Proposition := (Min + Max)/2;
 				Compteur := Compteur + 1;
-			when 'P' | 'p' => Min := Proposition;
+			when 'P' | 'p' => Min := Proposition+1;
 				Proposition := (Min + Max)/2;
 				Compteur := Compteur + 1;
 			when 'T' | 't' => Quitter := True;
@@ -52,7 +52,7 @@ begin
 				Put_Line("   t si j'ai trouvé le nombre");
 		end case;
 		--Detecter le cas de triche 
-		if Proposition = Max or Proposition = Min then
+		if Min>Max then
 			Put("Vous trichez. J’arrête cette partie.");
 			Quitter := True;
 		end if;
