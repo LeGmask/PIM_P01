@@ -10,14 +10,13 @@ C1. Que se passe-t-il si dans Jeu_Devin_Exo2 l'utilisateur répond d'abord trop
 grand puis toujours trop petit ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
-
+Réponse : Ont réduit l'intervalle de recherche à ]500, 1000[ puis ensuite ont va prendre la valeurs moyenne entre 500 et 1000 et on prendra l'interval inferieur par rapport a la valeurs moyenne et ainsi de suite.
 
 --------------------------------------------------------------------------------
 C2. Est-on sûr que Jeu_Devin_Exo1 se termine ?  Quel argument peut-on donner ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : 
 
 
 --------------------------------------------------------------------------------
@@ -32,7 +31,7 @@ F1. Les noms Jeu_Devin_Exo1, Jeu_Devin_Exo2 et Jeu_Devin_Exo3 ne sont pas très
 parlants.  Par quoi pourrait-on les remplacer ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : Ont pourrait les remplacer par DevineUnNombre et FaitDevinerUnNombre.
 
 
 --------------------------------------------------------------------------------
@@ -40,7 +39,7 @@ E1. Quelles sont les modifications à apporter à votre programme pour chercher
 des nombres compris entre 1 et 9999 ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : Il faut changer l'intervale dans lequels le nombre a deviner est séléctionner.
 
 
 --------------------------------------------------------------------------------
@@ -49,7 +48,7 @@ puisse utiliser aussi les caractères <, > et = pour indiquer si le nombre
 proposé est trop petit, trop grand ou le bon ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : Rajouter ces carractères dans le selon qui exectute le code assotiée a chaque actions
 
 
 --------------------------------------------------------------------------------
@@ -57,7 +56,7 @@ E3. On veut limiter le nombre de tentatives à 10.  Si le nombre n'a pas été
 trouvé avant, le joueur a perdu.  Comment prendre en compte cette évolution ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : Il faudrait rajouter un compteur I, et repeter la demande de saisie d'un nombre tout en incrementant de 1 a chaque fois jusqu'a ce que le nombre soit trouvé ou bien que le nombre de tentative (I>=10).
 
 
 --------------------------------------------------------------------------------
@@ -66,7 +65,7 @@ Comment faire pour donner l'impression que le programme joue comme un humain
 tout en restant efficace ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : 
 
 
 --------------------------------------------------------------------------------
@@ -84,7 +83,7 @@ E6. Quand le programme détecte que l'utilisateur a triché, comment faire pour
 que le programme explique au joueur quand il a triché ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : Pour cela il faudrait que l'utilisateur rentre le nombre saisie, ainsi il serait alors possible de déterminer quand l'utilisateur aurais saisie la mauvais information.
 
 
 --------------------------------------------------------------------------------
