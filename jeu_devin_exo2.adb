@@ -1,6 +1,5 @@
-with Text_Io;              use Text_Io;
-with Ada.Integer_Text_Io;  use Ada.Integer_Text_Io;
-with Alea;
+with Ada.Text_Io;          use Ada.Text_Io;
+-- with Ada.Integer_Text_Io;  use Ada.Integer_Text_Io;
 
 -- Auteur : Antoine REY
 --Faire deviner un nombre choisi par un utilisateur à l’ordinateur
@@ -16,8 +15,8 @@ begin
 	loop 
 		Put("Avez-vous choisi un nombre compris entre 1 et 999 (o/n) ?");
 		Get(Reponse);
-		if Reponse /= 'O' or Reponse /= 'o' then
-			Put("J'attend");
+		if Reponse /= 'O' and Reponse /= 'o' then
+			Put_Line("J'attend...");
 		end if;
 		exit when Reponse = 'o' or Reponse = 'O';
 	end loop;  
@@ -53,7 +52,7 @@ begin
 		end case;
 		--Detecter le cas de triche 
 		if Min>Max then
-			Put("Vous trichez. J’arrête cette partie.");
+			Put_Line("Vous trichez. J’arrête cette partie.");
 			Quitter := True;
 		end if;
 		exit when Quitter;
