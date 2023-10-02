@@ -10,20 +10,21 @@ C1. Que se passe-t-il si dans Jeu_Devin_Exo2 l'utilisateur répond d'abord trop
 grand puis toujours trop petit ?
 --------------------------------------------------------------------------------
 
-Réponse : Ont réduit l'intervalle de recherche à ]500, 1000[ puis ensuite ont va prendre la valeurs moyenne entre 500 et 1000 et on prendra l'interval inferieur par rapport a la valeurs moyenne et ainsi de suite.
+Réponse : Avec g l'ordinateur sait que le nombre a deviner est en dessous de 500 mais au bout de 8 p il propose 499 et avec le 9ème l'ordinateur comprend que l'utilisateur triche. 
+
 
 --------------------------------------------------------------------------------
 C2. Est-on sûr que Jeu_Devin_Exo1 se termine ?  Quel argument peut-on donner ?
 --------------------------------------------------------------------------------
 
-Réponse : 
+Réponse : Non car la sortie dépend d'une saisie utilisateur (il peut choisir de répondre 1 à l'infini).
 
 
 --------------------------------------------------------------------------------
 C3. Est-on sûr que Jeu_Devin_Exo2 se termine ?  Quel argument peut-on donner ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : Oui car l'intervalle dans lequel se trouve le nombre de l'utilisateur est strictement décroisant et quand il est vide le rpogramme s'arrete sur le cas de triche. Cependant cela est valable uniquement dans le cas ou l'utilisateur répond avec des reponses cohérentes.
 
 
 --------------------------------------------------------------------------------
@@ -31,7 +32,7 @@ F1. Les noms Jeu_Devin_Exo1, Jeu_Devin_Exo2 et Jeu_Devin_Exo3 ne sont pas très
 parlants.  Par quoi pourrait-on les remplacer ?
 --------------------------------------------------------------------------------
 
-Réponse : Ont pourrait les remplacer par DevineUnNombre et FaitDevinerUnNombre.
+Réponse : Ont pourrait les remplacer par Devine_Un_Nombre et Fait_Deviner_UnNombre et Jeu_Du_Devin.
 
 
 --------------------------------------------------------------------------------
@@ -39,7 +40,7 @@ E1. Quelles sont les modifications à apporter à votre programme pour chercher
 des nombres compris entre 1 et 9999 ?
 --------------------------------------------------------------------------------
 
-Réponse : Il faut changer l'intervale dans lequels le nombre a deviner est séléctionner.
+Réponse : Il faut changer l'intervale dans lequel le nombre à deviner est séléctionné ([1,999] ==> [1,9999]).
 
 
 --------------------------------------------------------------------------------
@@ -48,7 +49,7 @@ puisse utiliser aussi les caractères <, > et = pour indiquer si le nombre
 proposé est trop petit, trop grand ou le bon ?
 --------------------------------------------------------------------------------
 
-Réponse : Rajouter ces carractères dans le selon qui exectute le code assotiée a chaque actions
+Réponse : Rajouter ces caractères dans le selon qui exectute le code assotiée à chaque actions.
 
 
 --------------------------------------------------------------------------------
@@ -56,7 +57,7 @@ E3. On veut limiter le nombre de tentatives à 10.  Si le nombre n'a pas été
 trouvé avant, le joueur a perdu.  Comment prendre en compte cette évolution ?
 --------------------------------------------------------------------------------
 
-Réponse : Il faudrait rajouter un compteur I, et repeter la demande de saisie d'un nombre tout en incrementant de 1 a chaque fois jusqu'a ce que le nombre soit trouvé ou bien que le nombre de tentative (I>=10).
+Réponse : Il faudrait rajouter un compteur I, et repeter la demande de saisie d'un nombre tout en incrementant de 1 à chaque fois jusqu'à ce que le nombre soit trouvé ou bien que le nombre de tentative soit dépassé (I>=10).
 
 
 --------------------------------------------------------------------------------
@@ -65,7 +66,7 @@ Comment faire pour donner l'impression que le programme joue comme un humain
 tout en restant efficace ?
 --------------------------------------------------------------------------------
 
-Réponse : 
+Réponse : On pourrait au lieu de faire une dichotomie classique en calculant la moitié de l'intervalle donner un nombre aléatoire dans l'intervalle 
 
 
 --------------------------------------------------------------------------------
@@ -75,7 +76,7 @@ une question. Le programme doit alors dire que l'utilisateur a abandonné la
 partie.  Comment faire ?
 --------------------------------------------------------------------------------
 
-Réponse : ...
+Réponse : il suffit de rajouter une ligne dans les selons de l'execice 1 et 2.
 
 
 --------------------------------------------------------------------------------
